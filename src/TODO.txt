@@ -1,0 +1,23 @@
+-Content:
+    -Add Profile structures(Or be lazy and wait to talk to sam about how its gonna look).
+    -Add Profiles for the groupchat
+    -More transitions:
+        -In between different categories(Ex: Personal Brands -> next switch)
+        -profiles
+    -Possible Description about each section?
+    -Comment & Like system
+-Services:
+    -transitions
+    -Figure out learn More
+    -make service cards look better
+    -add purchase button:
+        -Create contact page
+-Nav:
+    -Make it not look like a cartoon sketch
+-Whole App:
+    -Get back button to work
+    -One more section?:
+        -Media
+        -Partners
+        -Sponsors
+        -Projects

@@ -1,0 +1,112 @@
+//Nav Menu
+.Nav-entering{
+    transform: translateX(-175px);
+}
+
+.Nav-entered{
+    transform: translateX(0px);
+}
+
+.Nav-exiting{
+    transform: translateX(0px);
+}
+
+.Nav-exited{
+    transform: translateX(-175px);
+}
+
+.Nav{
+    transition: all 200ms ease-in;
+    position: fixed;
+}
+
+//Body
+
+.Data-entered{
+    
+    transform: translateX(175px);
+}
+
+.Data-entering{
+    
+    transform: translateX(0px);
+}
+
+.Data-exiting{
+    
+    transform: translateX(175px);
+}
+
+.Data-exited{
+    
+    transform: translateX(0px);
+}
+
+@media only screen and (max-width: 768px){
+    .Data-entered{
+    
+        display: none;
+    }
+    
+    .Data-entering{
+        
+        display: none;
+    }
+    
+    .Data-exiting{
+        
+        display: none;
+    }
+    
+    .Data-exited{
+        
+        display: block;
+    }
+}
+
+//Fade
+.Fade-appear{
+    opacity: 0.01;
+    transform: scale(0.5)
+}
+
+.Fade-appear-active{
+    opacity: 1;
+    transform: scale(1)
+}
+
+.Fade-enter-done{
+    opacity: 1;
+    transform: scale(1)
+}
+
+.Fade-enter{
+    opacity: 0.01;
+    transform: scale(0.5)
+}
+
+.Fade-enter-active{
+    opacity: 0.65;
+    transform: scale(1)
+}
+
+.Fade-exit{
+    opacity: 1;
+    transform: scale(1)
+}
+
+.Fade-exit-active{
+    opacity: 0.5;
+    transform: scale(1.25) 
+}
+
+.Fade-exit-active{
+    opacity: 0;
+    transform: scale(1.5)
+}
+
+.Fade{
+    transition: all 500ms ease-in;
+}
+
+

@@ -1,0 +1,160 @@
+.Home{
+    color: white;
+    padding-top: 1px;
+    
+    .Home-Data{
+        font-family: $secondary-font;
+        transition: all 300ms ease-in;
+        .Home-Data-Feat{
+            overflow: hidden;
+            h2{
+                margin: 20px auto 10px auto;
+            }
+        }
+        h2{
+            font-family: $main-font;
+            font-size: 4.5em;
+            letter-spacing: 3px;
+            color: white;
+        }
+        
+    }
+}
+.Home-Data-Label{
+    font-family: $main-font;
+    font-size: 7.5em;
+    letter-spacing: 3px;
+    color: white;
+            //text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+@media only screen and (max-width:600px){
+    .Home-Data-Label{
+        font-size: 6em;
+    }
+}
+.featured-cov{
+    margin-top: 25px;
+    .outline:hover{
+        cursor: pointer;
+    }
+    h3{
+        margin-top: 30px;
+        font-size: 2.65em;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        font-family: $main-font!important;
+        color: white;
+    }
+}
+
+
+.Home-Header{
+    font-family: $main-font;
+    transition: all 700ms ease-in;
+    margin-top: 35px;
+    h1{
+        font-size: 7.75em;
+        margin: 25px auto;
+        letter-spacing: 4px;
+        color: white;
+        //text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    }
+
+    h2{
+        color: white;
+        font-size: 5em;
+        letter-spacing: 2px;
+        margin-top: 15px;
+    }
+    h2:hover{
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .Home-Header{
+        margin-top: 50px;
+        h1{
+            font-size: 3.75em;
+            margin: 15px auto;
+        }
+        h2{
+            font-size: 3em;
+        }
+    }
+}
+
+//Transitions
+//Header
+.Home-entering{
+    opacity: 0.01;
+    transform: translateY(-100%);
+}
+
+.Home-entered{
+    opacity: 1;
+    transform: translateY(0)
+}
+
+.Home-exiting{
+    opacity: 1;
+    transform: translateY(-100%)
+}
+
+.Home-exited{
+    opacity: 0.01;
+    transform: translateY(-100%)
+}
+
+//Featured-Home
+.Feat-Transition{
+    transition: all 500ms linear;
+    overflow: hidden
+}
+
+.Feat-Home-enter{
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.Feat-Home-enter-active{
+    opacity: 1;
+    transform: translateY(0)
+}
+
+
+.Feat-Home-exit{
+    opacity: 0.5;
+    transform: translateY(50%)
+}
+
+.Feat-Home-exit-active{
+    opacity: 0.5;
+    transform: translateY(100%)
+}
+
+.Feat-Home-exit-done{
+    opacity: 0;
+    transform: translateY(200%)
+}
+
+
+.Feat-Article-entering{
+    opacity: 0.01;
+    transform: translateY(100%);
+}
+
+.Feat-Article-entered{
+    opacity: 1;
+    transform: translateY(0)
+}
+
+.Feat-Article-exiting{
+    opacity: 1;
+    transform: translateY(100%)
+}
+
+.Feat-Article-exited{
+    opacity: 0.01;
+    transform: translateY(100%)
+}

@@ -1,0 +1,765 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.App {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.15); }
+  .App .Data {
+    padding-top: 145px;
+    transition: all 200ms ease-in; }
+
+/*.S-M-H{
+	display: none;
+}*/
+.row {
+  margin: 0 !important; }
+
+.Home {
+  color: white;
+  padding-top: 1px; }
+  .Home .Home-Data {
+    font-family: "Wire One";
+    transition: all 300ms ease-in; }
+    .Home .Home-Data .Home-Data-Feat {
+      overflow: hidden; }
+      .Home .Home-Data .Home-Data-Feat h2 {
+        margin: 20px auto 10px auto; }
+    .Home .Home-Data h2 {
+      font-family: "Unica One";
+      font-size: 4.5em;
+      letter-spacing: 3px;
+      color: white; }
+
+.Home-Data-Label {
+  font-family: "Unica One";
+  font-size: 7.5em;
+  letter-spacing: 3px;
+  color: white; }
+
+@media only screen and (max-width: 600px) {
+  .Home-Data-Label {
+    font-size: 6em; } }
+
+.featured-cov {
+  margin-top: 25px; }
+  .featured-cov .outline:hover {
+    cursor: pointer; }
+  .featured-cov h3 {
+    margin-top: 30px;
+    font-size: 2.65em;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Unica One" !important;
+    color: white; }
+
+.Home-Header {
+  font-family: "Unica One";
+  transition: all 700ms ease-in;
+  margin-top: 35px; }
+  .Home-Header h1 {
+    font-size: 7.75em;
+    margin: 25px auto;
+    letter-spacing: 4px;
+    color: white; }
+  .Home-Header h2 {
+    color: white;
+    font-size: 5em;
+    letter-spacing: 2px;
+    margin-top: 15px; }
+  .Home-Header h2:hover {
+    cursor: pointer; }
+
+@media only screen and (max-width: 600px) {
+  .Home-Header {
+    margin-top: 50px; }
+    .Home-Header h1 {
+      font-size: 3.75em;
+      margin: 15px auto; }
+    .Home-Header h2 {
+      font-size: 3em; } }
+
+.Home-entering {
+  opacity: 0.01;
+  transform: translateY(-100%); }
+
+.Home-entered {
+  opacity: 1;
+  transform: translateY(0); }
+
+.Home-exiting {
+  opacity: 1;
+  transform: translateY(-100%); }
+
+.Home-exited {
+  opacity: 0.01;
+  transform: translateY(-100%); }
+
+.Feat-Transition {
+  transition: all 500ms linear;
+  overflow: hidden; }
+
+.Feat-Home-enter {
+  opacity: 0;
+  transform: translateY(100%); }
+
+.Feat-Home-enter-active {
+  opacity: 1;
+  transform: translateY(0); }
+
+.Feat-Home-exit {
+  opacity: 0.5;
+  transform: translateY(50%); }
+
+.Feat-Home-exit-active {
+  opacity: 0.5;
+  transform: translateY(100%); }
+
+.Feat-Home-exit-done {
+  opacity: 0;
+  transform: translateY(200%); }
+
+.Feat-Article-entering {
+  opacity: 0.01;
+  transform: translateY(100%); }
+
+.Feat-Article-entered {
+  opacity: 1;
+  transform: translateY(0); }
+
+.Feat-Article-exiting {
+  opacity: 1;
+  transform: translateY(100%); }
+
+.Feat-Article-exited {
+  opacity: 0.01;
+  transform: translateY(100%); }
+
+.Tile .Tile-Header {
+  margin: 0px auto 20px auto; }
+  .Tile .Tile-Header h1 {
+    color: white;
+    font-family: Unica One;
+    font-size: 8em;
+    letter-spacing: 3px;
+    padding: 5px 0 0 0; }
+
+.Tile .Tile-Data {
+  box-shadow: 0px 0px 90px black; }
+  .Tile .Tile-Data .content {
+    padding: 0 !important;
+    margin: 0 !important; }
+    .Tile .Tile-Data .content .feat {
+      padding: 0 !important;
+      margin: 0 !important;
+      transition: .4s;
+      background-color: rgba(0, 0, 0, 0.3); }
+      .Tile .Tile-Data .content .feat h3 {
+        color: white;
+        font-family: "Wire One";
+        font-size: 3em;
+        font-weight: 600;
+        letter-spacing: 4px;
+        padding-top: 125px;
+        padding-bottom: 129px;
+        margin: 0;
+        transition: .4s; }
+      .Tile .Tile-Data .content .feat h3:hover {
+        color: #45b3e7; }
+    .Tile .Tile-Data .content .feat:hover {
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.7); }
+
+@media only screen and (max-width: 600px) {
+  .Tile .Tile-Header {
+    margin: 0; }
+    .Tile .Tile-Header h1 {
+      color: white;
+      font-family: Unica One;
+      font-size: 7.25em;
+      letter-spacing: 3px;
+      padding: 5px 0 0 0; } }
+
+.Slide {
+  transition: all 500ms linear; }
+  .Slide .container {
+    padding: 0 !important; }
+
+@media only screen and (max-width: 600px) {
+  .Slide .container {
+    padding: 0 !important; }
+  .Slide h1 {
+    font-size: 6em !important; } }
+
+.Slide-enter {
+  opacity: 0.5;
+  transform: translateY(-200%); }
+
+.Slide-enter-active {
+  opacity: 0.75;
+  transform: translateY(-100%); }
+
+.Slide-enter-done {
+  opacity: 1;
+  transform: translateY(0); }
+
+.Slide-exit {
+  opacity: 1;
+  transform: translateY(0); }
+
+.Slide-exit-active {
+  opacity: 0.75;
+  transform: translateY(100%); }
+
+.Slide-exit-done {
+  opacity: 0.5;
+  transform: translateY(200%); }
+
+.featured-cov:hover div {
+  transform: scale(1.1); }
+
+.featured-cov:hover h3 {
+  color: #5cbdea; }
+
+.featured-cov div {
+  transition: all 150ms linear; }
+
+.featured-cov h3 {
+  transition: all 150ms linear; }
+
+.Services {
+  font-family: "Unica One"; }
+  .Services h1 {
+    font-size: 8em;
+    color: white; }
+  .Services .Icons {
+    padding: 20px 30px 15px 30px;
+    margin: 50px auto;
+    border-radius: 10px;
+    width: 75%; }
+    .Services .Icons .TransitionBox img {
+      transition: all 100ms linear; }
+    .Services .Icons .TransitionBox img:hover,
+    .Services .Icons .TransitionBox ul:hover {
+      cursor: pointer;
+      transform: scale(1.15); }
+    .Services .Icons .TransitionBox div {
+      list-style: none;
+      background-color: #050505;
+      padding: 20px 10px;
+      border-radius: 10px; }
+      .Services .Icons .TransitionBox div p {
+        margin: 15px auto;
+        color: #cbdcec;
+        font-size: 1.5em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-family: "Wire One"; }
+    .Services .Icons h2 {
+      color: #d59bc0;
+      font-size: 2.25em;
+      font-weight: 600;
+      letter-spacing: 3px; }
+  .Services button:hover {
+    border: none;
+    background-color: #202020; }
+  .Services button {
+    background-color: transparent;
+    border: none;
+    font-size: 3.5em;
+    letter-spacing: 3px;
+    color: white;
+    margin-top: 45px;
+    text-decoration: none; }
+  .Services .Service-Card {
+    margin: 75px auto 50px auto; }
+    .Services .Service-Card .Description {
+      box-shadow: 0px 0px 55px rgba(0, 0, 0, 0.8);
+      background-color: #050505;
+      border-radius: 15px 0px 0px 15px;
+      padding: 0px 15px; }
+      .Services .Service-Card .Description h2 {
+        color: #5cbdea;
+        font-size: 2.75em; }
+      .Services .Service-Card .Description div {
+        margin: 20px auto; }
+        .Services .Service-Card .Description div p {
+          color: white;
+          font-size: 1.6em;
+          margin: 15px auto;
+          letter-spacing: 2px;
+          font-weight: 600;
+          font-family: "Wire One"; }
+    .Services .Service-Card .Criteria {
+      padding: 0 25px 0 0;
+      background-color: white;
+      border-radius: 5px;
+      height: 455px;
+      transform: translateY(-30px);
+      box-shadow: 0px 0px 35px rgba(92, 189, 234, 0.9); }
+      .Services .Service-Card .Criteria .Info {
+        margin-top: 20px; }
+        .Services .Service-Card .Criteria .Info h3 {
+          color: #5cbdea;
+          font-size: 2.75em;
+          letter-spacing: 1px;
+          height: 55px;
+          font-weight: 600; }
+        .Services .Service-Card .Criteria .Info ul {
+          list-style: none; }
+          .Services .Service-Card .Criteria .Info ul li {
+            font-size: 2em;
+            font-weight: 700;
+            height: 72px;
+            letter-spacing: 2px;
+            font-family: "Wire One";
+            color: #050505; }
+
+@media only screen and (max-width: 600px) {
+  .Services h1 {
+    font-size: 6em; }
+  .Services img {
+    height: 128px;
+    width: 128px; }
+  .Services button {
+    margin-top: 5px;
+    margin-bottom: 15px; }
+  .Services .icons {
+    margin: 20px auto; } }
+
+.FadeIn {
+  transition: all 500ms ease-in; }
+
+.FadeIn-appear {
+  opacity: 0.5;
+  transform: translateY(150%); }
+
+.FadeIn-appear-active {
+  opacity: 1;
+  transform: translateY(0); }
+
+/*
+.FadeIn{
+    transition: all 500ms ease-in
+}
+
+.FadeIn{
+    transition: all 500ms ease-in
+}
+
+.FadeIn{
+    transition: all 500ms ease-in
+}
+
+.FadeIn{
+    transition: all 500ms ease-in
+}*/
+.Statement span {
+  display: inline-block; }
+  .Statement span p {
+    color: white;
+    font-family: "Unica One";
+    font-size: 3em !important;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 3px black; }
+
+.Menu-Icon:hover {
+  cursor: pointer; }
+
+.Menu-Icon {
+  top: 0; }
+  .Menu-Icon h4 {
+    font-family: "Unica One";
+    transform: translateY(11px); }
+
+.Section {
+  height: 100vh;
+  width: 183px;
+  position: fixed;
+  background-color: #050505;
+  box-shadow: inset -4px 0px 15px 0px rgba(250, 250, 250, 0.4);
+  transition: 0.6s; }
+  .Section h4 {
+    float: right;
+    padding-right: 10px;
+    font-family: "Unica One";
+    font-size: 1.75em;
+    color: white; }
+  .Section h4:hover {
+    cursor: pointer;
+    color: red; }
+  .Section .Section-Links .links {
+    padding: 5px 0; }
+    .Section .Section-Links .links .links-pic {
+      height: 32px;
+      width: 32px; }
+    .Section .Section-Links .links h3 {
+      display: inline-block;
+      color: white;
+      font-family: "Unica One";
+      font-size: 2.5em;
+      padding-left: 3px;
+      letter-spacing: 1px;
+      transition: 0.2s ease-out;
+      transform: translateY(11px);
+      margin: 10px auto 20px auto !important; }
+    .Section .Section-Links .links h3:hover {
+      color: #ff8f00;
+      cursor: pointer;
+      transition: 0.2s ease-in; }
+  .Section .Section-Logo {
+    position: absolute;
+    bottom: 0; }
+    .Section .Section-Logo p {
+      color: #5cbdea;
+      font-family: "Unica One";
+      font-size: 1.9em;
+      float: right; }
+
+@media only screen and (max-width: 768px) {
+  .Menu-Icon h4 {
+    display: none !important; } }
+
+/*.S-M-H{
+    margin-top: 400px;
+    width: 200px;
+    height: 220px;
+    position: fixed;
+    right: 0;
+    perspective: 1000px;
+    background-color: transparent;
+
+    li {
+        background-color: transparent;
+        :first-child a {
+            border-radius: 25px;
+        }
+
+        :last-child a {
+            border-radius: 25px;
+        }
+
+        :first-child {
+            a:hover {
+                background: #3b5998!important;
+            }
+        }
+
+        :nth-child(2) a:hover {
+            background: #00acee;
+        }
+
+        :nth-child(3) a:hover {
+            background: #ea4c89;
+        }
+
+        :nth-child(4) a:hover {
+            background: #dd4b39;
+        }
+
+        a {
+            display: block;
+            height: 47px;
+            width: 50px;
+            background: rgba(255,255,255,0.2);
+            border-bottom: solid 1px rgba(255,255,255,0.5);
+            font: normal normal normal 16px/20px 'FontAwesome', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+            color: #fff;
+            -webkit-font-smoothing: antialiased;
+            padding: 7px;
+            text-decoration: none;
+            text-align: center;
+            transition: background .5s ease .300ms;
+
+            span {
+                width: 100px;
+                float: left;
+                text-align: center;
+                background: #222;
+                color: #fff;
+                margin: -25px 74px;
+                padding: 8px;
+                transform-origin: 0;
+                visibility: hidden;
+                opacity: 0;
+                transform: rotateY(45deg);
+                border-radius: 5px;
+                transition: all .5s ease .300ms
+            }
+
+            span:after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 0;
+                position: absolute;
+                left: -20px;
+                top: 7px;
+                border-left: 10px solid transparent;
+                border-right: 10px solid #222;
+                border-bottom: 10px solid transparent;
+                border-top: 10px solid transparent;
+            }
+        }
+
+        a:hover span {
+            visibility: visible;
+            opacity: 1;
+            transform: rotateY(0)
+        }
+    }
+}*/
+.S-M-H {
+  margin-top: 455px;
+  margin-left: 10px;
+  width: 200px;
+  height: 220px;
+  position: fixed;
+  top: 0;
+  perspective: 1000px;
+  background-color: transparent; }
+  .S-M-H li {
+    background-color: transparent; }
+    .S-M-H li :first-child a {
+      border-radius: 25px; }
+    .S-M-H li :last-child a {
+      border-radius: 25px; }
+    .S-M-H li :first-child a:hover {
+      background: #3b5998 !important; }
+    .S-M-H li :nth-child(2) a:hover {
+      background: #00acee; }
+    .S-M-H li :nth-child(3) a:hover {
+      background: #ea4c89; }
+    .S-M-H li :nth-child(4) a:hover {
+      background: #dd4b39; }
+    .S-M-H li a {
+      display: block;
+      height: 47px;
+      width: 50px;
+      /*
+            background: rgba(255,255,255,0.2);
+            border-bottom: solid 1px rgba(255,255,255,0.5);*/
+      font: normal normal normal 16px/20px 'FontAwesome', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+      color: #fff;
+      -webkit-font-smoothing: antialiased;
+      padding: 7px;
+      text-decoration: none;
+      text-align: center;
+      transition: background .5s ease .300ms; }
+      .S-M-H li a span {
+        width: 100px;
+        float: left;
+        text-align: center;
+        background: #222;
+        color: #fff;
+        margin: -25px 74px;
+        padding: 8px;
+        transform-origin: 0;
+        visibility: hidden;
+        opacity: 0;
+        transform: rotateY(45deg);
+        border-radius: 5px;
+        transition: all .5s ease .300ms; }
+      .S-M-H li a span:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: -20px;
+        top: 7px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid #222;
+        border-bottom: 10px solid transparent;
+        border-top: 10px solid transparent; }
+    .S-M-H li a:hover span {
+      visibility: visible;
+      opacity: 1;
+      transform: rotateY(0); }
+
+@media only screen and (max-width: 600px) {
+  .S-M-H {
+    display: none; } }
+
+.Article {
+  margin-bottom: 40px; }
+  .Article .Article-Title {
+    font-family: "Unica One";
+    color: white !important; }
+    .Article .Article-Title h2 {
+      margin-bottom: 25px !important;
+      font-size: 8em;
+      letter-spacing: 4px; }
+  .Article .Article-Data {
+    background-color: #050505;
+    padding: 35px 40px 25px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 35px black; }
+    .Article .Article-Data .Article-Player {
+      box-shadow: 0px 0px 25px rgba(92, 189, 234, 0.4); }
+    .Article .Article-Data .Home-Data-Btn {
+      background-color: transparent;
+      color: white;
+      border: none;
+      font-size: 2.95em;
+      transition: 0.2s ease-in;
+      letter-spacing: 2px;
+      font-family: "Unica One" !important;
+      text-shadow: 1px 1px 3px #202020; }
+    .Article .Article-Data .Home-Data-Btn:hover {
+      background-color: #202020;
+      color: white;
+      transition: 0.2s ease-in; }
+    .Article .Article-Data .Article-Text {
+      margin: 38px auto 0 auto; }
+      .Article .Article-Data .Article-Text p {
+        color: white;
+        font-size: 2.5em;
+        font-family: "Wire One";
+        font-weight: 600;
+        letter-spacing: 1px; }
+    .Article .Article-Data .Social-Article {
+      margin: 40px auto; }
+      .Article .Article-Data .Social-Article li {
+        display: inline;
+        margin: 0px 8px; }
+        .Article .Article-Data .Social-Article li a span {
+          display: none; }
+
+@media only screen and (max-width: 600px) {
+  .Article-Data {
+    padding: 35px 20px 25px 20px !important; } }
+
+.bttn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 2.95em;
+  transition: 0.2s ease-in;
+  letter-spacing: 2px;
+  font-family: "Unica One" !important;
+  position: fixed;
+  bottom: 0;
+  right: 0; }
+
+.bttn:hover {
+  color: white;
+  transition: 0.2s ease-in; }
+
+.Brands {
+  background-color: #050505;
+  padding: 0px 40px 25px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 90px black;
+  margin: 30px auto 55px auto; }
+  .Brands div h4:hover {
+    color: #5cbdea !important;
+    cursor: pointer; }
+  .Brands .Brands-Catergory {
+    margin: 25px auto; }
+    .Brands .Brands-Catergory .Brands-Header {
+      font-family: "Unica One";
+      margin-bottom: 10px; }
+      .Brands .Brands-Catergory .Brands-Header h2 {
+        font-size: 5em;
+        letter-spacing: 2px;
+        color: #5cbdea; }
+    .Brands .Brands-Catergory .Brands-Data .col-md-3 h3 {
+      font-family: "Unica One";
+      font-size: 1.9em;
+      letter-spacing: 1px;
+      transition: 0.1s ease-in;
+      color: #cbdcec; }
+    .Brands .Brands-Catergory .Brands-Data .col-md-3:hover {
+      cursor: pointer; }
+      .Brands .Brands-Catergory .Brands-Data .col-md-3:hover .outline:hover {
+        box-shadow: 0px 0px 25px #5cbdea !important;
+        transition: 0.1s ease-in; }
+      .Brands .Brands-Catergory .Brands-Data .col-md-3:hover h3 {
+        color: #5cbdea;
+        transition: 0.1s ease-in; }
+
+@media only screen and (max-width: 600px) {
+  .Brands .Brands-Header h3 {
+    font-size: 3.5em !important; } }
+
+.Nav-entering {
+  transform: translateX(-175px); }
+
+.Nav-entered {
+  transform: translateX(0px); }
+
+.Nav-exiting {
+  transform: translateX(0px); }
+
+.Nav-exited {
+  transform: translateX(-175px); }
+
+.Nav {
+  transition: all 200ms ease-in;
+  position: fixed; }
+
+.Data-entered {
+  transform: translateX(175px); }
+
+.Data-entering {
+  transform: translateX(0px); }
+
+.Data-exiting {
+  transform: translateX(175px); }
+
+.Data-exited {
+  transform: translateX(0px); }
+
+@media only screen and (max-width: 768px) {
+  .Data-entered {
+    display: none; }
+  .Data-entering {
+    display: none; }
+  .Data-exiting {
+    display: none; }
+  .Data-exited {
+    display: block; } }
+
+.Fade-appear {
+  opacity: 0.01;
+  transform: scale(0.5); }
+
+.Fade-appear-active {
+  opacity: 1;
+  transform: scale(1); }
+
+.Fade-enter-done {
+  opacity: 1;
+  transform: scale(1); }
+
+.Fade-enter {
+  opacity: 0.01;
+  transform: scale(0.5); }
+
+.Fade-enter-active {
+  opacity: 0.65;
+  transform: scale(1); }
+
+.Fade-exit {
+  opacity: 1;
+  transform: scale(1); }
+
+.Fade-exit-active {
+  opacity: 0.5;
+  transform: scale(1.25); }
+
+.Fade-exit-active {
+  opacity: 0;
+  transform: scale(1.5); }
+
+.Fade {
+  transition: all 500ms ease-in; }

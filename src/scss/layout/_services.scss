@@ -1,0 +1,132 @@
+.Services {
+  font-family: $main-font;
+  h1 {
+    font-size: 8em;
+    color: white;
+  }
+  .Icons {
+    //background-color: #050505;
+    padding: 20px 30px 15px 30px;
+    margin: 50px auto;
+    border-radius: 10px;
+    width: 75%;
+    //box-shadow: inset 0px -5px 90px rgba(92, 189, 234, 0.4);
+    .TransitionBox {
+      img {
+        transition: all 100ms linear;
+      }
+      img:hover,
+      ul:hover {
+        cursor: pointer;
+        transform: scale(1.15);
+      }
+
+      div {
+        list-style: none;
+        background-color: #050505;
+        padding: 20px 10px;
+        border-radius: 10px;
+        p {
+          margin: 15px auto;
+          color: $white;
+          font-size: 1.5em;
+          font-weight: 600;
+          letter-spacing: 1px;
+          font-family: $secondary-font;
+        }
+      }
+    }
+    h2 {
+      color: #d59bc0;
+      font-size: 2.25em;
+      font-weight: 600;
+      letter-spacing: 3px;
+    }
+  }
+  button:hover {
+    border: none;
+    background-color: #202020;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    font-size: 3.5em;
+    letter-spacing: 3px;
+    color: white;
+    margin-top: 45px;
+    text-decoration: none;
+  }
+  .Service-Card {
+      margin: 75px auto 50px auto;
+      
+    .Description {
+      box-shadow: 0px 0px 55px rgba(0,0,0, 0.8);
+      background-color: #050505;
+      border-radius: 15px 0px 0px 15px;
+      padding: 0px 15px;
+      h2 {
+        color: $secondary-color;
+        font-size: 2.75em;
+      }
+      div {
+        margin: 20px auto;
+        p {
+          color: white;
+          font-size: 1.6em;
+          margin: 15px auto;
+          letter-spacing: 2px;
+          font-weight: 600;
+          font-family: $secondary-font;
+        }
+      }
+    }
+    .Criteria {
+      padding: 0 25px 0 0;
+      background-color: white;
+      border-radius: 5px;
+      height: 455px;
+      transform: translateY(-30px);
+      box-shadow: 0px 0px 35px rgba(92, 189, 234, 0.9);
+      .Info {
+        margin-top:20px; 
+        h3 {
+          color: $secondary-color;
+          font-size: 2.75em;
+          letter-spacing: 1px;
+          height: 55px;
+          font-weight: 600;
+        }
+        ul {
+          list-style: none;
+          li{
+            font-size: 2em;
+            font-weight: 700;
+            height: 72px;
+            letter-spacing: 2px;
+            font-family: $secondary-font;
+            color: #050505
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Services {
+    h1 {
+      font-size: 6em;
+    }
+    img {
+      height: 128px;
+      width: 128px;
+    }
+    button {
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+    .icons {
+      margin: 20px auto;
+    }
+  }
+}

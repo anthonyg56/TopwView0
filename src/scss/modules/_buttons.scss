@@ -1,0 +1,20 @@
+
+.bttn{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 2.95em;
+    //margin-top: 35px;
+    transition: 0.2s ease-in;
+   // padding: 10px 30px;
+    letter-spacing: 2px;
+    font-family: $main-font!important;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.bttn:hover{
+    //background-color: #202020;
+    color: white;
+    transition: 0.2s ease-in;
+}

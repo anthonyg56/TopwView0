@@ -1,0 +1,46 @@
+//Transition
+.FadeIn {
+  transition: all 500ms ease-in;
+}
+
+.FadeIn-appear {
+  opacity: 0.5;
+  transform: translateY(150%);
+}
+
+.FadeIn-appear-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*
+.FadeIn{
+    transition: all 500ms ease-in
+}
+
+.FadeIn{
+    transition: all 500ms ease-in
+}
+
+.FadeIn{
+    transition: all 500ms ease-in
+}
+
+.FadeIn{
+    transition: all 500ms ease-in
+}*/
+
+//Data
+.Statement {
+  span {
+      display: inline-block;
+    p {
+      color: white;
+      font-family: $main-font;
+      font-size: 3em !important;
+      font-weight: 800;
+      //margin: 55px 20px;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 3px black;
+    }
+  }
+}
