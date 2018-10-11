@@ -6,10 +6,10 @@
   }
   .Icons {
     //background-color: #050505;
-    padding: 20px 30px 15px 30px;
-    margin: 50px auto;
+    //padding: 20px 30px 15px 30px;
+    //margin: 50px auto;
     border-radius: 10px;
-    width: 75%;
+    //width: 75%;
     //box-shadow: inset 0px -5px 90px rgba(92, 189, 234, 0.4);
     .TransitionBox {
       img {
@@ -37,10 +37,11 @@
       }
     }
     h2 {
-      color: #d59bc0;
+      color: white;
       font-size: 2.25em;
       font-weight: 600;
       letter-spacing: 3px;
+      margin: 0;
     }
   }
   button:hover {

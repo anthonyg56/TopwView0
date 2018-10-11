@@ -240,10 +240,7 @@ html, body {
     font-size: 8em;
     color: white; }
   .Services .Icons {
-    padding: 20px 30px 15px 30px;
-    margin: 50px auto;
-    border-radius: 10px;
-    width: 75%; }
+    border-radius: 10px; }
     .Services .Icons .TransitionBox img {
       transition: all 100ms linear; }
     .Services .Icons .TransitionBox img:hover,
@@ -263,10 +260,11 @@ html, body {
         letter-spacing: 1px;
         font-family: "Wire One"; }
     .Services .Icons h2 {
-      color: #d59bc0;
+      color: white;
       font-size: 2.25em;
       font-weight: 600;
-      letter-spacing: 3px; }
+      letter-spacing: 3px;
+      margin: 0; }
   .Services button:hover {
     border: none;
     background-color: #202020; }
@@ -688,8 +686,8 @@ html, body {
         transition: 0.1s ease-in; }
 
 @media only screen and (max-width: 600px) {
-  .Brands .Brands-Header h3 {
-    font-size: 3.5em !important; } }
+  .Brands .Brands-Header h2 {
+    font-size: 4em !important; } }
 
 .Nav-entering {
   transform: translateX(-175px); }

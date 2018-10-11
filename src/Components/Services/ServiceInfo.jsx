@@ -13,6 +13,9 @@ import PhotoCam from "./svg/004-photo-camera.svg";
 import VideoCam from "./svg/003-super-8.svg";
 import Box from "./svg/002-box.svg";
 
+//Backgrounds
+import Photo from "../../img/covers/topViewStudio.jpg"
+
 export const ServiceInfo = [
     {
         Name: "Photography",
@@ -147,9 +150,15 @@ export const HomeDisplay = props => {
     var text1 = ServiceInfo[1].Rundown;
     var text2 = ServiceInfo[2].Rundown;
     var text3 = ServiceInfo[3].Rundown;
-    var display = [
+    let styleOutline = {
+        backgroundImage: "url(" + Photo + ")",
+        height: "300px",
+        backgroundSize: "cover",
+        backgroundPosition: "center"
+    }
+    /*var display = [
         [
-            <img src={PhotoCam} alt="icon" id={0} onClick={photo} />,
+            Photos,
             <div className="text-center">
                 {text.map((e, key) => {
                     return <p id={key}>{e}</p>;
@@ -157,7 +166,7 @@ export const HomeDisplay = props => {
             </div>
         ],
         [
-            <img src={VideoCam} alt="icon" id={1} onClick={cinema} />,
+            Photos,
             <div className="text-center">
                 {text1.map((e, key) => {
                     return <p id={key}>{e}</p>;
@@ -165,7 +174,7 @@ export const HomeDisplay = props => {
             </div>
         ],
         [
-            <img src={Monitor} alt="icon" id={2} onClick={web} />,
+            Photos,
             <div className="text-center">
                 {text2.map((e, key) => {
                     return <p id={key}>{e}</p>;
@@ -180,15 +189,15 @@ export const HomeDisplay = props => {
                 })}
             </div>
         ]
-    ];
+    ];*/
 
     return (
-        <div className="Icons container-fluid">
+        <div className="Icons container">
             {ServiceInfo.map((e, key) => {
                 time = +350;
                 return (
-                    <div className="col-lg-3 col-md-3 col-sm-6">
-                        <TransitionGroup className="TransitionBox" appear id={key}>
+                    <div className="col-lg-6 col-md-6 col-sm-6" style={styleOutline} >
+                        {/*<TransitionGroup className="TransitionBox" appear id={key}>
                             <CSSTransition
                                 timeout={time}
                                 key={index}
@@ -196,7 +205,7 @@ export const HomeDisplay = props => {
                             >
                                 {display[key][index]}
                             </CSSTransition>
-                        </TransitionGroup>
+                </TransitionGroup>*/}
                         <h2>{e.Name}</h2>
                     </div>
                 );

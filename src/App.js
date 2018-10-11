@@ -58,6 +58,19 @@ class App extends Component {
     });
   };
 
+  switchData = () => {
+    this.setState({
+      POS: 1
+    })
+  }
+
+  backOut = () => {
+    this.setState({
+      POS: 0,
+      Back: null
+    })
+  }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -66,15 +79,16 @@ class App extends Component {
       Nav: <Nav load={() => this.loadNav()} />,
       Push: false,
       ID: 0,
-      Back: null
+      Back: null,
+      POS: 0
     };
   }
 
   render() {
-    const { Nav, Push, ID, Social, NavMenu, Back } = this.state;
+    const { Nav, Push, ID, Social, NavMenu, Back, POS } = this.state;
     Items = [
-      <Content showBack={() => this.showBack()} />,
-      <Services showBack={() => this.showBack()} />
+      <Content showBack={() => this.showBack()} pos={POS} switchContent={() => this.switchData()}/>,
+      <Services showBack={() => this.showBack()} pos={POS} switchContent={() => this.switchData()}/>
     ];
     return (
       <div className="App">
