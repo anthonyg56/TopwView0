@@ -7,18 +7,14 @@ class Podcast extends React.Component{
         let index = this.state.Index;
         let back = this.state.Back;
         this.setState({
-            Index: (x === 0) ? (index + 1) : (index - 1),
-            Back: ((index === 1) && (x === 1) && (back === 1)) ? 0 : 1,
-            Next: ((index === 4) && (x === 0)) ? 0 : 1
+            Index: (x === 0) ? (index + 1) : (index - 1)
         });
     }
 
     constructor(props){
         super(props);
         this.state = {
-            Index: 0,
-            Back: 0,
-            Next: 1
+            Index: 0
         }
     }
 

@@ -111,7 +111,7 @@ export const ServiceInfo = [
         ]
     },
     {
-        Name: "Photography",
+        Name: "Packages",
         ID: 3,
         Icon: Box,
         Data: Packages,
@@ -146,16 +146,18 @@ export const ServiceInfo = [
 export const HomeDisplay = props => {
     let { flip, index, photo, cinema, web, pack } = props;
     var time = 400;
-    var text = ServiceInfo[0].Rundown;
-    var text1 = ServiceInfo[1].Rundown;
-    var text2 = ServiceInfo[2].Rundown;
-    var text3 = ServiceInfo[3].Rundown;
     let styleOutline = {
         backgroundImage: "url(" + Photo + ")",
         height: "300px",
         backgroundSize: "cover",
         backgroundPosition: "center"
-    }
+    };
+    let func = [
+        photo,
+        cinema,
+        web,
+        pack
+    ];
     /*var display = [
         [
             Photos,
@@ -196,7 +198,7 @@ export const HomeDisplay = props => {
             {ServiceInfo.map((e, key) => {
                 time = +350;
                 return (
-                    <div className="col-lg-6 col-md-6 col-sm-6" style={styleOutline} >
+                    <div className="col-lg-6 col-md-6 col-sm-6" style={styleOutline} onClick={func[key]}>
                         {/*<TransitionGroup className="TransitionBox" appear id={key}>
                             <CSSTransition
                                 timeout={time}
@@ -210,7 +212,7 @@ export const HomeDisplay = props => {
                     </div>
                 );
             })}
-            <button onClick={flip}>Learn More</button>
+            {/*<button onClick={flip}>Learn More</button>*/}
         </div>
     );
 };

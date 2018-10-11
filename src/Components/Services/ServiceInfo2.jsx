@@ -95,7 +95,7 @@ export const ServiceInfo = [
         ]
     },
     {
-        Name: "Photography",
+        Name: "Packages",
         ID: 3,
         Icon: Box,
         Data: Packages,

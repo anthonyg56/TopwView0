@@ -21,7 +21,8 @@ class App extends Component {
       Social: <Social Class="S-M-H" />,
       Nav: <Nav load={() => this.loadNav()} />,
       Push: false,
-      Back: null
+      Back: null,
+      POS: 0
     });
   };
 
